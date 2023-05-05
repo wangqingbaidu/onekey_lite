@@ -1,25 +1,29 @@
-# Onekey组件
+# Onekey
 
-## 介绍
-Onekey平台中拆分出来的组件，具体介绍的参考：http://www.medai.icu/thread/63 
+## 初始化
 
-* comp1-传统组学，传统组学pipeline，特征提取、筛选、建模、评估系列流程。
-* comp2-结构化数据，csv、Excel格式数据，例如生理生化，临床数据、提取好特征的数据（深度特征）等建模。
-* comp3-融合，包括前融合和后融合技术相关组件。
-* comp4-What，深度学习特征提取，迁移学习；2D、3D数据都涵盖在此组件中。
-* comp5-Which，ROI区域的自动勾画，涵盖2D、3D数据的识别逻辑。
-* comp6-Sequence，序列化数据，构建中，当前为源码模式。
-* comp7-Survival，生存分析，KM、Cox、Nomogram 相关组件。
-* comp8-Modules，Onekey中的一些单独的模块用于做数据分析用的，例如ICC、指标分析之类的模块。
+首次使用Onekey时必须要运行的代码，具体的步骤，另外注意解压到的目录不能包括中文。
 
-### Onekey视频
+1. 安装必备软件中的`Anaconda3.exe`。
 
-链接：https://pan.baidu.com/s/1x_FovKJYqcddtQSLTtuGFA?pwd=rb7b 
-提取码：rb7b 
-密码：www.medai.icu
+   > 注意在此页面一定选择`All Users(requires admin privileges)`，然后一路保持默认，包括安装位置。
 
-#### 配置环境
+    ![image-20220426225135173](http://www.medai.icu/storage/attachments/2022/04/26/n1PceZmyokf1LvGAMuYD9p1nUM5OP93xQmEIKTrY.png)
 
-将下载下来的OnekeyVideo，解压到任意位置，并且添加`ONEKEY_ROOT`到系统环境变量。对应的值为解压文件目录。  例如：
+2. 双击运行`初始化OnekeyAI.bat`, 等待安装完成。如果是非初次初始化，中间可能会遇到问题，可尝试多次直至没有问题。
 
-![img.png](http://www.medai.icu/storage/attachments/2022/03/26/060cGWTOEMWnnWyAQ1iMVnsTJyoQmSUfxyceSfFB.png)
+3. 运行OnekeyTools工具箱中的OKT-update.exe程序，更新Onekey组件。
+### 验证配置
+
+运行`验证OnekeyAI.bat`；出现下面的，即为初始化成功。
+
+```shell
+#######################################################
+##            欢迎使用Onekey，当前版本：x.x.x          ##
+##         OnekeyAI助力科研，我们将竭诚为您服务！       ##
+#######################################################
+```
+
+## 使用说明
+
+进入到onekey_comp，使用【点我运行.bat】启动可视化页面，使用对应组件即可。
