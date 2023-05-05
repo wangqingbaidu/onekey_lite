@@ -8,6 +8,7 @@ import concurrent.futures
 import json
 import logging
 import os
+import time
 import traceback
 from pathlib import Path
 from typing import Union, List
@@ -149,6 +150,8 @@ class ConventionalRadiomics(object):
         settings = {}
         if params_file is not None:
             print(f"Onekey Lite不支持参数文件指定，如需自定义配置文件，请升级Onekey Professional。")
+            time.sleep(3)
+
         self.params_file = None
         self.params = params
         self.settings = settings

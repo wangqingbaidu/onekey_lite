@@ -6,9 +6,6 @@
 # Copyright 2015-2019 All Rights Reserved.
 import torch.nn as nn
 
-from onekey_core.core import onekey_authorize
-
-onekey_authorize.check_state()
 __all__ = ['create_losses']
 
 

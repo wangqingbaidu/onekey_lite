@@ -15,9 +15,6 @@ from monai.transforms import (
 )
 from torchvision.transforms import transforms
 
-from onekey_core.core import onekey_authorize
-
-onekey_authorize.check_state()
 __all__ = ['create_standard_image_transformer']
 
 
