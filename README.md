@@ -1,5 +1,7 @@
 # onekey_lite
 
+Onekey平台适用版。官网：www.medai.icu
+
 ## 安装环境
 
 ```buildoutcfg
